@@ -1,0 +1,139 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-preview {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius: 20px;
+  border: 2px solid #22548a;
+  background-color: #efefef;
+  border-style: dashed;
+}
+
+#image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+span {
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #22548a;
+  background: #22548a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  margin-left: -18.5rem;
+}
+
+#results {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #22548a;
+  background: #22548a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  margin-left: -7rem;
+}
+
+.resultlogo {
+  width: 22px;
+  margin-right: 0.3rem;
+}
+
+.logo img {
+  width: 17rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-div {
+  flex: 0 0 auto;
+  margin-top: 12rem;
+}
+
+.right-div {
+  flex: 1;
+  margin-left: 150px;
+  margin-top: 2rem;
+}
+
+.imageinput {
+  margin-top: 0.5rem;
+}
+
+input[type="file"] {
+  background: #efefef;
+  padding: 9px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+input[type="submit"] {
+  background: #22548a;
+  padding: 10px;
+  height: 49px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #143c68;
+  cursor: pointer;
+}
+
+input::file-selector-button {
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 7px;
+  background: #22548a;
+  margin-right: 0.5rem;
+}
+
+input::file-selector-button:hover {
+  background: #143c68;
+  cursor: pointer;
+}
+
+.resultpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>Hair Loss Stage Detection</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-div">
+        <div class="logo">
+          <img src="/static/mmlogo.png" alt="logo" id="logo" />
+        </div>
+        <div class="imageinput">
+          <form method="post" id="file-input" enctype="multipart/form-data">
+            <input
+              method="post"
+              type="file"
+              id="myFile"
+              name="filename"
+              required
+            />
+            <input type="submit" value="Check" onClick="postData()" />
+          </form>
+        </div>
+      </div>
+      <div class="right-div">
+        <div class="resultpage">
+          <div id="image-preview-container">
+            <canvas id="image-preview"></canvas>
+          </div>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/static/main.js"></script>
+</html>
